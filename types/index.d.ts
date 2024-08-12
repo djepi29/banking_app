@@ -25,7 +25,7 @@ declare type LoginUser = {
   password: string;
 };
 
-declare type User = {
+declare type user = {
   $id: string;
   email: string;
   userId: string;
@@ -48,7 +48,7 @@ declare type NewUserParams = {
   password: string;
 };
 
-declare type Account = {
+declare type account = {
   id: string;
   availableBalance: number;
   currentBalance: number;
@@ -81,7 +81,7 @@ declare type Transaction = {
   receiverBankId: string;
 };
 
-declare type Bank = {
+declare type bank = {
   $id: string;
   accountId: string;
   bankId: string;
@@ -202,7 +202,7 @@ declare interface BankTabItemProps {
   appwriteItemId?: string;
 }
 
-declare interface TotlaBalanceBoxProps {
+declare interface TotalBalanceBoxProps {
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;
