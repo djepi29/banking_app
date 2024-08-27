@@ -131,7 +131,7 @@ export const logoutAccount = async () => {
   }
 }
 
-export const createLinkToken = async (user: User) => {
+export const createLinkToken = async (user: user) => {
   try {
     const tokenParams = {
       user: {
